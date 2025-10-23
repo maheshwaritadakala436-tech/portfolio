@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+
+  <!-- Step: Link CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="form-box">
+      <form onsubmit="return showMessage()">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <a href="#" class="back-home">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Optional JS for popup message -->
+  <script>
+    function showMessage() {
+      alert("Thank you! Your message has been sent successfully.");
+      return false; // Stops real form submission
+    }
+  </script>
+</body>
+</html>
